@@ -1,0 +1,1 @@
+import{d as r}from"./vendor-a962175c.js";import"./index-11d2d6b3.js";const d=r({id:"store-knowledge",state:()=>({currentFolderId:1}),getters:{},actions:{changeCurrentFolderId(e){this.currentFolderId=e}}});export{d as u};

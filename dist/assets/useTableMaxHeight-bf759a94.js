@@ -1,0 +1,1 @@
+import{q as o}from"./index-11d2d6b3.js";function s(n,e){const t=()=>{if(e){const{top:i}="getBoundingClientRect"in e?e.getBoundingClientRect():e.$el.getBoundingClientRect();n.value=window.innerHeight-i}};o({name:"resize",listener:()=>{t()},immediate:!0})}export{s as u};

@@ -1,0 +1,29 @@
+{
+    "Create Pinia Store": {
+      "scope": "javascript,typescript",
+      "prefix": "store-template",
+      "body": [
+        "import { defineStore } from 'pinia';",
+        "import store from '@/store/pinia';",
+        "",
+        "interface ${1:XXX}State {",
+        "}",
+        "",
+        "export const use${1:XXX}Store = defineStore({",
+        "  id: 'store-${1:XXX}',",
+        "  state: ():${1:XXX}State => ({",
+        "  }),",
+        "  getters: {},",
+        "  actions: {},",
+        "});",
+        "",
+        "// Need to be used outside the setup",
+        "export function use${1:XXX}StoreWithOut() {",
+        "  return use${1:XXX}Store(store);",
+        "}",
+        "",
+      ],
+      "description": "Create a Pinia store with XXX"
+    }
+  }
+  

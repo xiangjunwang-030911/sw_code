@@ -1,0 +1,1 @@
+import{g as e,k as n,o as a,m as t,aq as r}from"./vendor-a962175c.js";const d=e({__name:"index",setup(s){const o=r();return n(()=>{window.open(location.origin+"/#/admin"),o.back()}),(c,i)=>(a(),t("div",null,"Loading..."))}});export{d as default};

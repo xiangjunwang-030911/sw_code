@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 17</title>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-6" transform="translate(-299.000000, -310.000000)">
+            <g id="property备份" transform="translate(216.000000, 253.000000)">
+                <g id="编组-16" transform="translate(30.000000, 57.000000)">
+                    <g id="编组-17" transform="translate(53.499712, -8.378257)">
+                        <path d="M0,8.378257 C5.2114874,24.3525475 13.5977406,33.5769712 25.1587595,36.0515282 C36.7197784,38.5260852 39.2189529,26.5089092 32.656283,0 L0,8.378257 Z" id="路径-2" fill="#FA6400"></path>
+                        <g id="check" transform="translate(10.500288, 13.378257)" fill-rule="nonzero">
+                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="12" height="12"></rect>
+                            <polygon id="路径" fill="#FFFFFF" points="4.3335 8.75375 10.902 2 12 3.1205 4.33575 11 4.098 10.7555 4.0965 10.757 0 6.55625 1.1265 5.465"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

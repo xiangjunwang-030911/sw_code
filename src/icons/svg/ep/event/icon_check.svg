@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>二级-应用事件</title>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-4" transform="translate(-264.000000, -1219.000000)" fill-rule="nonzero">
+            <g id="history备份-2" transform="translate(216.000000, 1120.000000)">
+                <g id="编组-14备份" transform="translate(26.000000, 98.000000)">
+                    <g id="二级-应用事件" transform="translate(22.000000, 1.000000)">
+                        <rect id="矩形" fill="#94A3B8" x="0" y="0" width="16" height="16" rx="3"></rect>
+                        <g id="编组" transform="translate(3.000000, 3.000000)" fill="#FFFFFF">
+                            <path d="M3.73725,6.573375 C3.73725,6.573375 6.18525,1.85625 9,0 C8.6535,0.889875 8.778375,2.554875 9,3.443625 C7.6275,3.756375 4.804875,7.27875 3.889125,9 C2.8260365,7.65479722 1.50348533,6.53692204 7.09432513e-17,5.71275 L1.485,4.294125 L3.73725,6.573375 Z" id="路径"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

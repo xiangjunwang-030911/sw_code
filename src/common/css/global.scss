@@ -1,0 +1,270 @@
+@import "./transition.scss";
+@import "./entry.scss";
+* {
+  font-family: "Microsoft YaHei", 微软雅黑, Arial, sans-serif;
+  font-size: 14px;
+}
+
+:root{
+  --el-menu-item-height: 44px !important;
+  --el-menu-base-level-padding: 14px !important;
+  --sw-light-bg-color: #F5F7F9;
+  --sw-dark-bg-color: #2A2C35;
+}
+
+html.dark{
+    // 修改饿了吗默认色值
+    --el-border-color-lighter: #29292A !important;
+    --el-border-color-light: #29292A !important;
+}
+
+// 全局文字颜色定义
+.c-primary{ color: var(--el-color-primary);}
+.c-regular{ color: var(--el-text-color-regular);}
+.c-secondary{ color: var(--el-text-color-secondary);}
+
+
+// 特殊字体定义
+.oppo-font{font-family: 'OPPOSans2_en';}
+@font-face {
+  font-family: 'OPPOSans2_en';
+  src: url('https://peertime.oss-cn-shanghai.aliyuncs.com/CW/font/OPPOSans_Design2.07_En.65b39881.woff2') format("woff2");
+  src: url('https://peertime.oss-cn-shanghai.aliyuncs.com/CW/font/OPPOSans_Design2.07_En.f5bbb9c2.woff') format("woff"); 
+  src: url('https://peertime.oss-cn-shanghai.aliyuncs.com/CW/font/OPPOSans_Design2.07_En.b22c26da.ttf') format("truetype"); 
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+}
+
+//全局滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #eaecf1;
+  border-radius: 3px;
+  &:hover {
+    background: #c7c8cb;
+  }
+}
+
+.scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #fafafa;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 20px;
+    &:hover {
+      background: #7c7d7d;
+    }
+  }
+}
+
+.scrollBar-light2 {
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 16px;
+  }
+
+  // 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+  *::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  // 滚动条的轨道（里面装有Thumb）
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  // 滚动条的轨道（里面装有Thumb）
+  *::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+
+  // 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+  *::-webkit-scrollbar-thumb {
+    background: #eef4f1;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  // 边角，即两个滚动条的交汇处
+  *::-webkit-scrollbar-corner {
+    display: none;
+  }
+
+  // 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+  *::-webkit-resizer {
+    display: none;
+  }
+}
+
+.scrollBar-menu {
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #29313e;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #ccc;
+  }
+  &::-webkit-scrollbar-track:vertical {
+    background-color: #29313e;
+  }
+}
+
+.scrollBar-light {
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 15px;
+  }
+
+  // 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+  *::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  // 滚动条的轨道（里面装有Thumb）
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  // 滚动条的轨道（里面装有Thumb）
+  *::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+
+  // 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+  *::-webkit-scrollbar-thumb {
+    background: #eef4f1;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  // 边角，即两个滚动条的交汇处
+  *::-webkit-scrollbar-corner {
+    display: none;
+  }
+
+  // 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+  *::-webkit-resizer {
+    display: none;
+  }
+}
+
+.custom-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  margin: 0 8px 8px 0;
+  border-radius: 5px;
+  min-width: 325px;
+}
+
+.ivu-table-header-resizable {
+  width: 6px !important;
+  height: 48% !important;
+  bottom: 8px !important;
+  right: -5px !important;
+  cursor: col-resize;
+  z-index: 1;
+  // background-color: #e8eaec !important;
+}
+// 去除开启border后的边框线
+.el-table--border::after,
+.el-table--border::before,
+.el-table__border-left-patch {
+  display: none !important;
+}
+
+.el-tabs__nav-wrap::after {
+  display: none !important;
+}
+
+.modal-wrapper {
+  .el-dialog__header {
+    margin: 0 !important;
+  }
+}
+
+// .el-button {
+//   --el-bg-color: var(--color-white);
+//   --el-bg-color-page: #f6f6f6;
+//   --el-bg-color-overlay: #ffffff;
+//   --el-text-color-primary: #333333;
+//   --el-text-color-regular: #666666;
+//   --el-text-color-secondary: #999999;
+//   --el-text-color-placeholder: #a8abb2;
+//   --el-text-color-disabled: #c0c4cc;
+//   --el-border-color: #dcdfe6;
+//   --el-border-color-light: #e4e7ed;
+//   --el-border-color-lighter: #ebeef5;
+//   --el-border-color-extra-light: #f2f2f2;
+//   --el-border-color-dark: #d4d7de;
+//   --el-border-color-darker: #cdd0d6;
+
+//   background-color: var(--el-button-bg-color, var(--el-color-white));
+
+
+//   &:focus {
+//     border-color: var(--el-button-border-color);
+//     background-color: var(--el-button-bg-color);
+//   }
+//   &:hover {
+//     color: var(--el-button-hover-text-color);
+//     border-color: var(--el-button-hover-border-color);
+//     background-color: var(--el-button-hover-bg-color);
+//   }
+// }
+
+.el-card {
+  border-radius: 5px !important;
+  border: none !important;
+  .el-card__header {
+    border: none !important;
+    padding-bottom: 0px !important;
+    .card-header {
+      border-bottom: 1px solid var(--el-card-border-color) !important;
+      padding-bottom: 15px !important;
+      font-weight: 500 !important;
+    }
+  }
+}
+.el-card {
+  &.no-line {
+    .el-card__header {
+      .card-header {
+        border-bottom: none !important;
+      }
+    }
+  }
+  &.no-padding {
+    .el-card__header {
+      padding: 0;
+    }
+    .el-card__body {
+      padding: 0;
+    }
+  }
+}
+
+html.dark .el-card {
+  --el-card-bg-color: var(--el-bg-color) !important;
+}

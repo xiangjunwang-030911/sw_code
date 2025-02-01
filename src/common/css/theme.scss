@@ -1,0 +1,47 @@
+$themes: (
+    light: (
+        event_history_blue_bg: #e0f2fe,
+        event_history_blue_bg2: #fff,
+        event_history_green_bg: #D1FAE5,
+        event_history_green_bg2: #fff,
+        event_history_purple_bg: #f3e8ff,
+        event_history_purple_bg2: #fff,
+    ),
+    dark: (
+        event_history_blue_bg: #111f30,
+        event_history_blue_bg2: #1a2e4a,
+        event_history_green_bg: #102b23,
+        event_history_green_bg2: #214d3c,
+        event_history_purple_bg: #3B0764,
+        event_history_purple_bg2: #581C87,
+    )
+);
+
+//遍历主题
+@mixin themeify {
+    @each $theme-name, $theme-map in $themes {
+        //!global 把局部变量强升为全局变量
+        $theme-map: $theme-map !global;
+
+        //判断html的data-theme的属性值  #{}是sass的插值表达式
+        //& sass嵌套里的父容器标识   @content是混合器插槽，像vue的slot
+        [data-theme="#{$theme-name}"] & {
+            @content;
+        }
+    }
+}
+
+//声明一个根据Key获取颜色的function
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+@mixin Theme($property, $value, $important: true) {
+    @include themeify {
+        @if $important {
+            #{$property}: themed($value) !important;
+        } @else {
+            #{$property}: themed($value);
+        }
+    }
+}

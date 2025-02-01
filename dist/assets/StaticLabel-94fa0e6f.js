@@ -1,0 +1,1 @@
+import{g as l,o,c as n,x as t,p as s,an as r}from"./vendor-a962175c.js";const c=["innerHTML"],i=l({__name:"StaticLabel",props:{modelValue:{},label:{}},setup(m){return(e,_)=>{const a=r;return o(),n(a,{label:e.label},{default:t(()=>[s("span",{class:"w-full font-normal",innerHTML:e.modelValue||""},null,8,c)]),_:1},8,["label"])}}});export{i as default};

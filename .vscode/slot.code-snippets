@@ -1,0 +1,7 @@
+{
+  "templateSlot": {
+    "prefix": "template",
+    "body": ["<template #${1}>", "\t$2", "</template>\n"],
+    "description": "template slot"
+  }
+}

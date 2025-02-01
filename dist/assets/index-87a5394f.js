@@ -1,0 +1,1 @@
+import{_ as e}from"./index-11d2d6b3.js";import{o,m as t}from"./vendor-a962175c.js";const r={};function n(c,s,a,p,_,f){return o(),t("div",null,"开发中...")}const d=e(r,[["render",n]]);export{d as default};
