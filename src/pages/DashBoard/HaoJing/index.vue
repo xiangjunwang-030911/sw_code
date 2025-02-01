@@ -154,7 +154,7 @@
             </box-wrapper>
           </div>
           <div class="pb-3">
-            <box-wrapper title="系统公告">
+            <box-wrapper title="系统公告111">
               <div class="pl-4">
                 <div
                   class="notice-wrapper opacity-80 text-white overflow-hidden relative"
